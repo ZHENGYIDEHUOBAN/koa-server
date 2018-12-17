@@ -1,0 +1,10 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "description": "koa-server",
+  "main": "main.js",
+  "repository": "zhengyidehuobanscy@gmail.com",
+  "author": "scy",
+  "license": "MIT",
+  "private": true
+}
