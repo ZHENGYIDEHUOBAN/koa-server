@@ -1,11 +1,14 @@
 const Koa = require('koa');
 const KoaRouter = require('koa-router');
 
+const Model = require('./model/interface');
+
+const user = new Model('user');
 const app = new Koa();
 
 const router = KoaRouter();
 router.get('/api/getUser', async(ctx, next) => {
-  ctx.response.body = 'index page';
+  ctx.response.body = await user.query();
   await next();
 });
 
